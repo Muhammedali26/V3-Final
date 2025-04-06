@@ -1,0 +1,65 @@
+[
+    {
+    "Name":"Donna A",
+    "DRYNESS": 0.6923,
+    "DAMAGE": 0.2667,
+    "SENSITIVITY": 0.4545,
+    "SEBUM Oil": 0.7143,
+    "DRY SCALP": 0.0,
+    "FLAKES": 0.2439,
+    "Goal": "Growth",
+    "Issue": "Thinning hair",
+    "Hair Type": "Type 4c",
+    "Hair Texture": "Thin or Fine",
+    "Hair Behaviour": "C- Easily absorbs water, requires more hair care products, loses moisture easily, prone to frizz and tangling, It dries quickly,takes on colour easily , Colour treatments fade quickly.",
+    "Scalp Feeling": "Sensitive",
+    "Wash_Hair": "About once a month",
+    "Treatments": "No not me",
+    "Scalp_Flaky": "Yes Usually",
+    "Oily_Scalp": "My scalp gets dry not oily",
+    "Dry_Scalp": "3 - 5 Days"
+  }
+,
+  {
+    "Name":"Clover L",
+    "DRYNESS": 0.4615,
+    "DAMAGE": 0.3333,
+    "SENSITIVITY": 0.4545,
+    "SEBUM Oil": 0.4762,
+    "DRY SCALP": 0.7143,
+    "FLAKES": 0.2439,
+    "Goal": "Moisture retention",
+    "Issue": "Not me",
+    "Hair Type": "Type 4b",
+    "Hair Texture": "Thin or Fine",
+    "Hair Behaviour": "B - Its bouncy and elastic, not prone to breakage or brittle, requires very little maintenance, easily accepts applied moisture, hold styles well, accepts color well and evenly.",
+    "Scalp Feeling": "Sensitive",
+    "Wash_Hair": "About once a month",
+    "Treatments": "No not me",
+    "Scalp_Flaky": "Yes Rarely",
+    "Oily_Scalp": "3 - 4 Days",
+    "Dry_Scalp": "Within hours"
+  }
+  
+  ,
+  {
+    "Name":"Louisa E",
+    "DRYNESS": 0.9231,
+    "DAMAGE": 0.4667,
+    "SENSITIVITY": 0.4545,
+    "SEBUM Oil": 0.7143,
+    "DRY SCALP": 0.7143,
+    "FLAKES": 0.0,
+    "Goal": "Moisture retention",
+    "Issue": "Split ends / hair breakage",
+    "Hair Type": "Type 4b",
+    "Hair Texture": "Thin or Fine",
+    "Hair Behaviour": "C- Easily absorbs water, requires more hair care products, loses moisture easily, prone to frizz and tangling, It dries quickly,takes on colour easily , Colour treatments fade quickly.",
+    "Scalp Feeling": "Sensitive",
+    "Wash_Hair": "Once a week",
+    "Treatments": "No not me",
+    "Scalp_Flaky": "No Not Me",
+    "Oily_Scalp": "1 - 2 Days",
+    "Dry_Scalp": "Within hours"
+  }
+ ]

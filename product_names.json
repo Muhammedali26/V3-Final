@@ -1,0 +1,91 @@
+{
+  "all_products": [
+    "AfricanPrideMoistureMiracleAloe&CoconutWaterPreShampoo",
+    "AfricanPrideMoistureMiracleHoney&CoconutOilShampoo",
+    "AsIAmCoconutCoWashCleansingConditioner",
+    "AsIAmCurlClarityShampooNP",
+    "AsIAmDoubleButterCreamRichDailyMoisturizer227g/8Oz.",
+    "AsIAmDry&ItchyScalpCareOlive&TeaTreeOilCoWash",
+    "AsIAmLeaveInConditioner237ml/8FlOz.",
+    "AvalonTheScienceOfHaircareKeraCareNaturalTextures2ConditionerWithoutRinse240Ml",
+    "AvlonKeraCareAntiDandruffMoisturizingShampooForDry&ItchyScalpShampoo1240ml/8Fl.Oz",
+    "CamilleRoseCurlLoveMoistureMilk",
+    "CamilleRoseNaturalsMoroccanPearConditioningCustardForLowPorosity",
+    "DesignEssentialsOatProtein&HennaFullerThickerStrongerDeepCleansingShampoo",
+    "DesignEssentialsOatProtein&HennaFullerThickerStrongerDeepCleansingShampooHighRated",
+    "FaithInNatureNaturalAvocadoConditionerNourishingVegan",
+    "GiovanniDirectLeaveInConditioner\u2013HighRated",
+    "GiovanniTeaTreeTripleTreatConditioner",
+    "KeraCareHumectoCr\u00e8meConditioner234g",
+    "KeraCare\u00aeEssentialOilsOilSealant/MoistureLock/Nourishment.50",
+    "MielleOrganicsMongongoOilHydratingConditioner\u2013NOProtein",
+    "MielleOrganicsWhitePeonyLeaveinConditioner8Oz236Ml",
+    "OrganicsWhitePeonyLeaveinConditioner8Oz236Ml",
+    "PrePooFaithInNatureNaturalAvocadoConditionerNourishingVegan",
+    "SealentKeraCare\u00aeEssentialOilsOilSealant/MoistureLock/Nourishment..50",
+    "SheaMoistureAfricanBlackSoapBambooCharcoalDeepCleansingShampoo13OZ.",
+    "SheaMoistureJamaicanBlackCastorOilStrengthen/GrowAndRestoreLeaveInConditioner16Oz",
+    "SheaMoistureJamaicanBlackCastorOilStrengthenAndRestoreShampoo",
+    "SheaMoistureManukaHoney&MafuraOilConditioner",
+    "SheaMoistureOrganicRawSheaButterMoistureRetentionShampoo",
+    "SheaMoistureRawSheaButterExtraMoistureDetangler",
+    "SheaMoistureRawSheaButterRestorativeConditioner",
+    "TginMoistureRichSulfateFreeShampooForNaturalHair",
+    "TginMoistureRichSulfateFreeShampooForNaturalHairDryHairCurlyHairAlternate2WeeksOfEach",
+    "x"
+  ],
+  "product_by_category": {
+    "Shampoo MTH": [
+      "DesignEssentialsOatProtein&HennaFullerThickerStrongerDeepCleansingShampooHighRated",
+      "SheaMoistureAfricanBlackSoapBambooCharcoalDeepCleansingShampoo13OZ.",
+      "SheaMoistureJamaicanBlackCastorOilStrengthenAndRestoreShampoo"
+    ],
+    "Shampoo WK": [
+      "SheaMoistureOrganicRawSheaButterMoistureRetentionShampoo",
+      "AfricanPrideMoistureMiracleHoney&CoconutOilShampoo",
+      "AsIAmDry&ItchyScalpCareOlive&TeaTreeOilCoWash",
+      "AsIAmCurlClarityShampooNP",
+      "PrePooFaithInNatureNaturalAvocadoConditionerNourishingVegan",
+      "TginMoistureRichSulfateFreeShampooForNaturalHair",
+      "DesignEssentialsOatProtein&HennaFullerThickerStrongerDeepCleansingShampoo",
+      "AfricanPrideMoistureMiracleAloe&CoconutWaterPreShampoo",
+      "SheaMoistureJamaicanBlackCastorOilStrengthenAndRestoreShampoo",
+      "AvlonKeraCareAntiDandruffMoisturizingShampooForDry&ItchyScalpShampoo1240ml/8Fl.Oz",
+      "TginMoistureRichSulfateFreeShampooForNaturalHairDryHairCurlyHairAlternate2WeeksOfEach"
+    ],
+    "Conditioner": [
+      "x",
+      "AsIAmLeaveInConditioner237ml/8FlOz.",
+      "SheaMoistureJamaicanBlackCastorOilStrengthen/GrowAndRestoreLeaveInConditioner16Oz",
+      "GiovanniDirectLeaveInConditioner\u2013HighRated",
+      "CamilleRoseNaturalsMoroccanPearConditioningCustardForLowPorosity",
+      "SheaMoistureManukaHoney&MafuraOilConditioner",
+      "SheaMoistureRawSheaButterRestorativeConditioner",
+      "SheaMoistureRawSheaButterExtraMoistureDetangler",
+      "CamilleRoseCurlLoveMoistureMilk",
+      "AsIAmCoconutCoWashCleansingConditioner",
+      "AvalonTheScienceOfHaircareKeraCareNaturalTextures2ConditionerWithoutRinse240Ml",
+      "MielleOrganicsWhitePeonyLeaveinConditioner8Oz236Ml",
+      "GiovanniTeaTreeTripleTreatConditioner"
+    ],
+    "Conditioner 2": [
+      "CamilleRoseCurlLoveMoistureMilk",
+      "AsIAmDoubleButterCreamRichDailyMoisturizer227g/8Oz.",
+      "AsIAmLeaveInConditioner237ml/8FlOz.",
+      "MielleOrganicsMongongoOilHydratingConditioner\u2013NOProtein",
+      "KeraCareHumectoCr\u00e8meConditioner234g",
+      "FaithInNatureNaturalAvocadoConditionerNourishingVegan",
+      "MielleOrganicsWhitePeonyLeaveinConditioner8Oz236Ml",
+      "GiovanniDirectLeaveInConditioner\u2013HighRated",
+      "AvalonTheScienceOfHaircareKeraCareNaturalTextures2ConditionerWithoutRinse240Ml",
+      "SealentKeraCare\u00aeEssentialOilsOilSealant/MoistureLock/Nourishment..50"
+    ],
+    "Other ": [
+      "AsIAmDoubleButterCreamRichDailyMoisturizer227g/8Oz.",
+      "KeraCare\u00aeEssentialOilsOilSealant/MoistureLock/Nourishment.50",
+      "AfricanPrideMoistureMiracleAloe&CoconutWaterPreShampoo",
+      "MielleOrganicsWhitePeonyLeaveinConditioner8Oz236Ml",
+      "OrganicsWhitePeonyLeaveinConditioner8Oz236Ml"
+    ]
+  }
+}

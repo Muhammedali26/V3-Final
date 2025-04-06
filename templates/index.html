@@ -1,0 +1,134 @@
+{% extends "base.html" %}
+
+{% block title %}Welcome to Hair Care AI{% endblock %}
+
+{% block content %}
+<div class="container">
+    <!-- Hero Section -->
+    <div class="row align-items-center py-5">
+        <div class="col-lg-6">
+            <h1 class="display-4 fw-bold text-primary">Personalized Hair Care Recommendations</h1>
+            <p class="lead mb-4">Discover the perfect hair care routine tailored just for you using advanced AI technology.</p>
+            <div class="d-grid gap-3 d-sm-flex">
+                <a href="{{ url_for('recommendations') }}" class="btn btn-primary btn-lg px-4">
+                    <i class="fas fa-magic me-2"></i>Get Started
+                </a>
+                <a href="{{ url_for('name_search') }}" class="btn btn-outline-primary btn-lg px-4">
+                    <i class="fas fa-search me-2"></i>Search by Name
+                </a>
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <img src="{{ url_for('static', filename='img/hero-image.jpg') }}" alt="Hair Care" class="img-fluid rounded-3 shadow">
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="row py-5">
+        <div class="col-12 text-center mb-5">
+            <h2 class="fw-bold">Why Choose Our AI Recommendations?</h2>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <i class="fas fa-brain fa-3x text-primary mb-3"></i>
+                    <h3 class="h5 card-title">AI-Powered Analysis</h3>
+                    <p class="card-text">Our advanced AI analyzes multiple factors to provide personalized recommendations.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <i class="fas fa-user-check fa-3x text-primary mb-3"></i>
+                    <h3 class="h5 card-title">Personalized Results</h3>
+                    <p class="card-text">Get recommendations tailored to your unique hair type and concerns.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 border-0 shadow-sm">
+                <div class="card-body text-center">
+                    <i class="fas fa-chart-line fa-3x text-primary mb-3"></i>
+                    <h3 class="h5 card-title">Continuous Learning</h3>
+                    <p class="card-text">Our system learns and improves with each recommendation to provide better results.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- How It Works Section -->
+    <div class="row py-5">
+        <div class="col-12 text-center mb-5">
+            <h2 class="fw-bold">How It Works</h2>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="text-center">
+                <div class="circle-step mb-3">1</div>
+                <h4 class="h5">Enter Your Details</h4>
+                <p>Tell us about your hair type and concerns</p>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="text-center">
+                <div class="circle-step mb-3">2</div>
+                <h4 class="h5">AI Analysis</h4>
+                <p>Our AI analyzes your unique profile</p>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="text-center">
+                <div class="circle-step mb-3">3</div>
+                <h4 class="h5">Get Recommendations</h4>
+                <p>Receive personalized product suggestions</p>
+            </div>
+        </div>
+        <div class="col-md-3 mb-4">
+            <div class="text-center">
+                <div class="circle-step mb-3">4</div>
+                <h4 class="h5">Try Products</h4>
+                <p>Experience the perfect hair care routine</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- CTA Section -->
+    <div class="row py-5">
+        <div class="col-12 text-center">
+            <div class="bg-primary text-white p-5 rounded-3">
+                <h2 class="fw-bold mb-3">Ready to Transform Your Hair Care Routine?</h2>
+                <p class="lead mb-4">Get your personalized recommendations now!</p>
+                <a href="{{ url_for('recommendations') }}" class="btn btn-light btn-lg px-4">
+                    <i class="fas fa-magic me-2"></i>Start Now
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+.circle-step {
+    width: 60px;
+    height: 60px;
+    background-color: var(--bs-primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+</style>
+{% endblock %} 

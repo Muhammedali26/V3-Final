@@ -1,0 +1,143 @@
+{% extends "base.html" %}
+
+{% block title %}Search Recommendations by Name{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <!-- Search Card -->
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <h2 class="card-title text-center mb-4">
+                        <i class="fas fa-search me-2"></i>
+                        Find Your Recommendations
+                    </h2>
+                    
+                    <form method="POST" action="{{ url_for('name_search') }}" class="mb-4">
+                        <div class="input-group">
+                            <input type="text" 
+                                   name="name" 
+                                   class="form-control form-control-lg" 
+                                   placeholder="Enter your name..."
+                                   required
+                                   value="{{ search_name if search_name else '' }}">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fas fa-search me-2"></i>Search
+                            </button>
+                        </div>
+                    </form>
+
+                    {% if error_message %}
+                    <div class="alert alert-danger" role="alert">
+                        <i class="fas fa-exclamation-circle me-2"></i>
+                        {{ error_message }}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+
+            <!-- Search Results -->
+            {% if search_results %}
+            <div class="card shadow-sm">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="h5 mb-0">Search Results</h3>
+                </div>
+                <div class="card-body">
+                    <div class="list-group">
+                        {% for result in search_results %}
+                        <a href="{{ url_for('view_recommendations', user_id=result.unique_id) }}" 
+                           class="list-group-item list-group-item-action">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h5 class="mb-1">{{ result.base_name }}</h5>
+                                    <small class="text-muted">
+                                        <i class="fas fa-fingerprint me-1"></i>
+                                        ID: {{ result.unique_id }}
+                                    </small>
+                                    {% if not loop.first %}
+                                    <span class="badge bg-success ms-2">
+                                        <i class="fas fa-chart-line me-1"></i>Progress Update
+                                    </span>
+                                    {% endif %}
+                                </div>
+                                <div class="text-end">
+                                    <small class="text-muted d-block">
+                                        <i class="fas fa-calendar me-1"></i>
+                                        {{ result.timestamp.split('T')[0] if result.timestamp else 'Unknown Date' }}
+                                    </small>
+                                    <span class="badge bg-primary">
+                                        <i class="fas fa-tag me-1"></i>
+                                        {{ result.primary_category }}
+                                    </span>
+                                </div>
+                            </div>
+                        </a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+
+            <!-- No Results Message -->
+            {% if search_name and not search_results %}
+            <div class="text-center">
+                <div class="alert alert-info" role="alert">
+                    <i class="fas fa-info-circle me-2"></i>
+                    No recommendations found for "{{ search_name }}". 
+                    <a href="{{ url_for('recommendations') }}" class="alert-link">
+                        Would you like to create new recommendations?
+                    </a>
+                </div>
+            </div>
+            {% endif %}
+
+            <!-- Quick Links -->
+            <div class="text-center mt-4">
+                <a href="{{ url_for('recommendations') }}" class="btn btn-outline-primary">
+                    <i class="fas fa-plus-circle me-2"></i>
+                    Get New Recommendations
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_css %}
+<style>
+.input-group {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.input-group .form-control {
+    border: none;
+    padding: 1rem;
+}
+
+.input-group .btn {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.list-group-item {
+    transition: all 0.2s;
+}
+
+.list-group-item:hover {
+    transform: translateX(5px);
+    background-color: #f8f9fa;
+}
+
+.badge {
+    font-weight: 500;
+    padding: 0.5em 1em;
+}
+
+.badge.bg-success {
+    font-size: 0.75em;
+}
+</style>
+{% endblock %} 

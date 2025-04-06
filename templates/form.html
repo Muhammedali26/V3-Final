@@ -1,0 +1,159 @@
+{% extends "base.html" %}
+
+{% block title %}Get Your Hair Care Recommendations{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h2 class="card-title text-center mb-4">Tell Us About Your Hair</h2>
+                    <form method="POST" action="{{ url_for('recommendations') }}" class="needs-validation" novalidate>
+                        <!-- Personal Information -->
+                        <div class="mb-4">
+                            <h4 class="h5 mb-3">Personal Information</h4>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required>
+                            </div>
+                        </div>
+
+                        <!-- Hair Conditions -->
+                        <div class="mb-4">
+                            <h4 class="h5 mb-3">Hair Conditions</h4>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="dryness" class="form-label">Dryness Level (%)</label>
+                                    <input type="number" class="form-control" id="dryness" name="dryness" min="0" max="100" value="50" required>
+                                    <div class="form-text">Enter a value between 0-100</div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="damage" class="form-label">Damage Level (%)</label>
+                                    <input type="number" class="form-control" id="damage" name="damage" min="0" max="100" value="50" required>
+                                    <div class="form-text">Enter a value between 0-100</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="sensitivity" class="form-label">Sensitivity Level (%)</label>
+                                    <input type="number" class="form-control" id="sensitivity" name="sensitivity" min="0" max="100" value="50" required>
+                                    <div class="form-text">Enter a value between 0-100</div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="sebum_oil" class="form-label">Sebum/Oil Level (%)</label>
+                                    <input type="number" class="form-control" id="sebum_oil" name="sebum_oil" min="0" max="100" value="50" required>
+                                    <div class="form-text">Enter a value between 0-100</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="dry_scalp" class="form-label">Dry Scalp Level (%)</label>
+                                    <input type="number" class="form-control" id="dry_scalp" name="dry_scalp" min="0" max="100" value="50" required>
+                                    <div class="form-text">Enter a value between 0-100</div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="flakes" class="form-label">Flakes Level (%)</label>
+                                    <input type="number" class="form-control" id="flakes" name="flakes" min="0" max="100" value="50" required>
+                                    <div class="form-text">Enter a value between 0-100</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hair Characteristics -->
+                        <div class="mb-4">
+                            <h4 class="h5 mb-3">Hair Characteristics</h4>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="hair_type" class="form-label">Hair Type</label>
+                                    <input type="text" class="form-control" id="hair_type" name="hair_type" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="hair_texture" class="form-label">Hair Texture</label>
+                                    <input type="text" class="form-control" id="hair_texture" name="hair_texture" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Hair Goals and Concerns -->
+                        <div class="mb-4">
+                            <h4 class="h5 mb-3">Goals and Concerns</h4>
+                            <div class="mb-3">
+                                <label for="goal" class="form-label">Hair Care Goal</label>
+                                <input type="text" class="form-control" id="goal" name="goal" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="issue" class="form-label">Main Hair Issue</label>
+                                <input type="text" class="form-control" id="issue" name="issue" required>
+                            </div>
+                        </div>
+
+                        <!-- Hair Behavior -->
+                        <div class="mb-4">
+                            <h4 class="h5 mb-3">Hair Behavior</h4>
+                            <div class="mb-3">
+                                <label for="hair_behaviour" class="form-label">How does your hair behave?</label>
+                                <input type="text" class="form-control" id="hair_behaviour" name="hair_behaviour" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="scalp_feeling" class="form-label">How does your scalp feel?</label>
+                                <input type="text" class="form-control" id="scalp_feeling" name="scalp_feeling" required>
+                            </div>
+                        </div>
+
+                        <!-- Additional Questions -->
+                        <div class="mb-4">
+                            <h4 class="h5 mb-3">Additional Information</h4>
+                            <div class="mb-3">
+                                <label for="wash_hair" class="form-label">How often do you wash your hair?</label>
+                                <input type="text" class="form-control" id="wash_hair" name="wash_hair" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="treatments" class="form-label">Do you use any hair treatments?</label>
+                                <input type="text" class="form-control" id="treatments" name="treatments" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="scalp_flaky" class="form-label">Is your scalp flaky?</label>
+                                <input type="text" class="form-control" id="scalp_flaky" name="scalp_flaky" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="oily_scalp" class="form-label">How quickly does your scalp get oily?</label>
+                                <input type="text" class="form-control" id="oily_scalp" name="oily_scalp" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="dry_scalp" class="form-label">How quickly does your scalp get dry?</label>
+                                <input type="text" class="form-control" id="dry_scalp" name="dry_scalp" required>
+                            </div>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="fas fa-magic me-2"></i>Get Recommendations
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+// Form validation
+(function () {
+    'use strict'
+    var forms = document.querySelectorAll('.needs-validation')
+    Array.prototype.slice.call(forms).forEach(function (form) {
+        form.addEventListener('submit', function (event) {
+            if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+            }
+            form.classList.add('was-validated')
+        }, false)
+    })
+})()
+</script>
+{% endblock %} 

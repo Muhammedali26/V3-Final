@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ürün URL Yönetimi</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { max-width: 1000px; margin: 0 auto; }
+        h1, h2 { color: #333; }
+        select, input { padding: 10px; margin: 5px 0; width: 100%; }
+        button { padding: 10px 15px; background: #4CAF50; color: white; border: none; cursor: pointer; margin: 10px 0; }
+        .result { margin-top: 20px; padding: 15px; background: #f9f9f9; border-radius: 5px; }
+        .category-select { margin-bottom: 20px; }
+        .categories { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
+        .category-btn { padding: 8px 15px; background: #f1f1f1; border: 1px solid #ddd; cursor: pointer; }
+        .category-btn.active { background: #4CAF50; color: white; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; margin-bottom: 20px; max-height: 400px; overflow-y: auto; }
+        .product-card { padding: 10px; border: 1px solid #ddd; border-radius: 5px; cursor: pointer; }
+        .product-card:hover { background: #f5f5f5; }
+        .selected { background: #e6f7ff; border-color: #1890ff; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ürün URL Yönetimi</h1>
+        
+        <h2>Kategori Seçimi</h2>
+        <div class="categories" id="categories">
+            <!-- Kategoriler dinamik olarak eklenecek -->
+        </div>
+        
+        <h2>Ürün Seçimi</h2>
+        <input type="text" id="searchInput" placeholder="Ürün adı ara..." onkeyup="filterProducts()">
+        
+        <div class="product-grid" id="productGrid">
+            <!-- Ürünler dinamik olarak eklenecek -->
+        </div>
+        
+        <h2>URL Ekle</h2>
+        <div>
+            <p><strong>Seçilen Ürün:</strong> <span id="selectedProduct">-</span></p>
+            <input id="productUrl" type="text" placeholder="Amazon Ürün URL'si" />
+            <button onclick="addProductUrl()">URL Ekle</button>
+        </div>
+        
+        <div class="result" id="result">Lütfen bir ürün seçin ve URL girin.</div>
+    </div>
+    
+    <script>
+        let allProducts = [];
+        let categories = {};
+        let selectedProduct = null;
+        let currentCategory = null;
+        
+        async function loadProducts() {
+            try {
+                const response = await fetch('/products');
+                const data = await response.json();
+                
+                allProducts = data.products;
+                categories = data.categories;
+                
+                // Kategorileri yükle
+                const categoriesDiv = document.getElementById('categories');
+                categoriesDiv.innerHTML = '';
+                
+                // "Tümü" kategorisi ekle
+                const allBtn = document.createElement('button');
+                allBtn.className = 'category-btn active';
+                allBtn.textContent = 'Tüm Ürünler';
+                allBtn.onclick = () => showAllProducts();
+                categoriesDiv.appendChild(allBtn);
+                
+                // Diğer kategorileri ekle
+                Object.keys(categories).forEach(category => {
+                    const btn = document.createElement('button');
+                    btn.className = 'category-btn';
+                    btn.textContent = category;
+                    btn.onclick = () => selectCategory(category);
+                    categoriesDiv.appendChild(btn);
+                });
+                
+                // Tüm ürünleri göster
+                showAllProducts();
+                
+                document.getElementById('result').textContent = `${data.total_products} ürün yüklendi.`;
+            } catch (error) {
+                document.getElementById('result').textContent = `Hata: ${error.message}`;
+            }
+        }
+        
+        function selectCategory(category) {
+            currentCategory = category;
+            
+            // Kategori butonlarını güncelle
+            document.querySelectorAll('.category-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.textContent === category) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Filtrelenmiş ürünleri göster
+            const filteredProducts = categories[category] || [];
+            renderProducts(filteredProducts);
+        }
+        
+        function showAllProducts() {
+            currentCategory = null;
+            
+            // "Tümü" butonunu aktif et
+            document.querySelectorAll('.category-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.textContent === 'Tüm Ürünler') {
+                    btn.classList.add('active');
+                }
+            });
+            
+            renderProducts(allProducts);
+        }
+        
+        function renderProducts(products) {
+            const grid = document.getElementById('productGrid');
+            grid.innerHTML = '';
+            
+            products.forEach(product => {
+                const card = document.createElement('div');
+                card.className = 'product-card';
+                if (product === selectedProduct) {
+                    card.classList.add('selected');
+                }
+                card.textContent = product;
+                card.onclick = () => selectProduct(product);
+                grid.appendChild(card);
+            });
+        }
+        
+        function selectProduct(product) {
+            selectedProduct = product;
+            document.getElementById('selectedProduct').textContent = product;
+            
+            // Seçili ürünü vurgula
+            document.querySelectorAll('.product-card').forEach(card => {
+                card.classList.remove('selected');
+                if (card.textContent === product) {
+                    card.classList.add('selected');
+                }
+            });
+        }
+        
+        function filterProducts() {
+            const searchText = document.getElementById('searchInput').value.toLowerCase();
+            let productsToShow = currentCategory ? categories[currentCategory] : allProducts;
+            
+            if (searchText) {
+                productsToShow = productsToShow.filter(product => 
+                    product.toLowerCase().includes(searchText)
+                );
+            }
+            
+            renderProducts(productsToShow);
+        }
+        
+        async function addProductUrl() {
+            const product = selectedProduct;
+            const url = document.getElementById('productUrl').value;
+            
+            if (!product || !url) {
+                document.getElementById('result').textContent = 'Lütfen ürün seçin ve URL girin!';
+                return;
+            }
+            
+            try {
+                const response = await fetch('/add-product-url', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        product_name: product,
+                        product_url: url
+                    })
+                });
+                
+                const data = await response.json();
+                document.getElementById('result').innerHTML = `
+                    <p><strong>Sonuç:</strong> ${data.message}</p>
+                    <p><strong>Ürün:</strong> ${product}</p>
+                    <p><strong>URL:</strong> ${url}</p>
+                    <p><strong>Sentiment Puanları:</strong></p>
+                    <pre>${JSON.stringify(data.sentiment_scores, null, 2)}</pre>
+                `;
+            } catch (error) {
+                document.getElementById('result').textContent = `Hata: ${error.message}`;
+            }
+        }
+        
+        // Sayfa yüklenince ürünleri yükle
+        window.onload = loadProducts;
+    </script>
+</body>
+</html>

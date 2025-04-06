@@ -1,0 +1,315 @@
+{
+  "sentiments": {
+    "AsIAmCurlClarityShampooNP": {
+      "likability": 0.65,
+      "effectiveness": 0.7,
+      "value_for_money": 0.6,
+      "ingredient_quality": 0.65,
+      "ease_of_use": 0.7,
+      "overall": 0.67
+    },
+    "AfricanPrideMoistureMiracleAloe&CoconutWaterPreShampoo": {
+      "likability": 0.85,
+      "effectiveness": 0.75,
+      "value_for_money": 1.0,
+      "ingredient_quality": 1.0,
+      "ease_of_use": 0.75,
+      "overall": 0.855
+    },
+    "AfricanPrideMoistureMiracleHoney&CoconutOilShampoo": {
+      "likability": 0.65,
+      "effectiveness": 0.7,
+      "value_for_money": 0.6,
+      "ingredient_quality": 0.65,
+      "ease_of_use": 0.7,
+      "overall": 0.67
+    },
+    "AsIAmCoconutCoWashCleansingConditioner": {
+      "likability": 0.7857142857142857,
+      "effectiveness": 0.45,
+      "value_for_money": 0.875,
+      "ingredient_quality": 0.875,
+      "ease_of_use": 0.65625,
+      "overall": 0.6988392857142858
+    },
+    "AsIAmDoubleButterCreamRichDailyMoisturizer227g/8Oz.": {
+      "likability": 0.65,
+      "effectiveness": 0.7,
+      "value_for_money": 0.6,
+      "ingredient_quality": 0.65,
+      "ease_of_use": 0.7,
+      "overall": 0.67
+    },
+    "AsIAmDry&ItchyScalpCareOlive&TeaTreeOilCoWash": {
+      "likability": 0.65625,
+      "effectiveness": 0.55,
+      "value_for_money": 0.0,
+      "ingredient_quality": 0.5,
+      "ease_of_use": 0.0,
+      "overall": 0.411875
+    },
+    "AsIAmLeaveInConditioner237ml/8FlOz.": {
+      "likability": 0.65,
+      "effectiveness": 0.7,
+      "value_for_money": 0.6,
+      "ingredient_quality": 0.65,
+      "ease_of_use": 0.7,
+      "overall": 0.67
+    },
+    "AvlonKeraCareAntiDandruffMoisturizingShampooForDry&ItchyScalpShampoo1240ml/8Fl.Oz": {
+      "likability": 0.65,
+      "effectiveness": 0.7,
+      "value_for_money": 0.6,
+      "ingredient_quality": 0.65,
+      "ease_of_use": 0.7,
+      "overall": 0.67
+    },
+    "CamilleRoseCurlLoveMoistureMilk": {
+      "likability": 0.65,
+      "effectiveness": 0.7,
+      "value_for_money": 0.6,
+      "ingredient_quality": 0.65,
+      "ease_of_use": 0.7,
+      "overall": 0.67
+    },
+    "DesignEssentialsOatProtein&HennaFullerThickerStrongerDeepCleansingShampoo": {
+      "likability": 0.65,
+      "effectiveness": 0.7,
+      "value_for_money": 0.6,
+      "ingredient_quality": 0.65,
+      "ease_of_use": 0.7,
+      "overall": 0.67
+    },
+    "DesignEssentialsOatProtein&HennaFullerThickerStrongerDeepCleansingShampooHighRated": {
+      "likability": 0.65,
+      "effectiveness": 0.7,
+      "value_for_money": 0.6,
+      "ingredient_quality": 0.65,
+      "ease_of_use": 0.7,
+      "overall": 0.67
+    },
+    "GiovanniDirectLeaveInConditioner\u2013HighRated": {
+      "likability": 0.7702702702702703,
+      "effectiveness": 0.7142857142857143,
+      "value_for_money": 0.8125,
+      "ingredient_quality": 0.7352941176470589,
+      "ease_of_use": 0.7678571428571429,
+      "overall": 0.7581819214172154
+    },
+    "GiovanniTeaTreeTripleTreatConditioner": {
+      "likability": 0.65,
+      "effectiveness": 0.7,
+      "value_for_money": 0.6,
+      "ingredient_quality": 0.65,
+      "ease_of_use": 0.7,
+      "overall": 0.67
+    },
+    "KeraCareHumectoCr\u00e8meConditioner234g": {
+      "likability": 0.65,
+      "effectiveness": 0.7,
+      "value_for_money": 0.6,
+      "ingredient_quality": 0.65,
+      "ease_of_use": 0.7,
+      "overall": 0.67
+    },
+    "KeraCare\u00aeEssentialOilsOilSealant/MoistureLock/Nourishment.50": {
+      "likability": 0.75,
+      "effectiveness": 1.0,
+      "value_for_money": 0.5,
+      "ingredient_quality": 0.75,
+      "ease_of_use": 0.6,
+      "overall": 0.76
+    },
+    "MielleOrganicsMongongoOilHydratingConditioner\u2013NOProtein": {
+      "likability": 0.65,
+      "effectiveness": 0.7,
+      "value_for_money": 0.6,
+      "ingredient_quality": 0.65,
+      "ease_of_use": 0.7,
+      "overall": 0.67
+    },
+    "MielleOrganicsWhitePeonyLeaveinConditioner8Oz236Ml": {
+      "likability": 0.75,
+      "effectiveness": 0.65,
+      "value_for_money": 0.7,
+      "ingredient_quality": 0.8125,
+      "ease_of_use": 0.4722222222222222,
+      "overall": 0.6884722222222222
+    },
+    "OrganicsWhitePeonyLeaveinConditioner8Oz236Ml": {
+      "likability": 0.7777777777777778,
+      "effectiveness": 0.65,
+      "value_for_money": 0.7,
+      "ingredient_quality": 0.8125,
+      "ease_of_use": 0.5,
+      "overall": 0.6995833333333334
+    },
+    "SealentKeraCare\u00aeEssentialOilsOilSealant/MoistureLock/Nourishment..50": {
+      "likability": 0.75,
+      "effectiveness": 1.0,
+      "value_for_money": 0.5,
+      "ingredient_quality": 0.75,
+      "ease_of_use": 0.6,
+      "overall": 0.76
+    },
+    "SheaMoistureAfricanBlackSoapBambooCharcoalDeepCleansingShampoo13OZ.": {
+      "likability": 0.65,
+      "effectiveness": 0.7,
+      "value_for_money": 0.6,
+      "ingredient_quality": 0.65,
+      "ease_of_use": 0.7,
+      "overall": 0.67
+    },
+    "SheaMoistureJamaicanBlackCastorOilStrengthenAndRestoreShampoo": {
+      "likability": 0.875,
+      "effectiveness": 0.8214285714285714,
+      "value_for_money": 0.7916666666666666,
+      "ingredient_quality": 0.7307692307692307,
+      "ease_of_use": 0.4,
+      "overall": 0.7803388278388278
+    },
+    "SheaMoistureOrganicRawSheaButterMoistureRetentionShampoo": {
+      "likability": 0.75,
+      "effectiveness": 0.5,
+      "value_for_money": 0.42857142857142855,
+      "ingredient_quality": 0.5,
+      "ease_of_use": 0.5,
+      "overall": 0.5607142857142858
+    },
+    "SheaMoistureRawSheaButterExtraMoistureDetangler": {
+      "likability": 0.8970588235294118,
+      "effectiveness": 0.8636363636363636,
+      "value_for_money": 0.5,
+      "ingredient_quality": 0.5,
+      "ease_of_use": 0.75,
+      "overall": 0.7532085561497326
+    },
+    "TginMoistureRichSulfateFreeShampooForNaturalHair": {
+      "likability": 0.8235294117647058,
+      "effectiveness": 0.65,
+      "value_for_money": 0.75,
+      "ingredient_quality": 0.8,
+      "ease_of_use": 0.53125,
+      "overall": 0.7251838235294118
+    },
+    "SheaMoistureJamaicanBlackCastorOilStrengthen/GrowAndRestoreLeaveInConditioner16Oz": {
+      "likability": 0.65,
+      "effectiveness": 0.7,
+      "value_for_money": 0.6,
+      "ingredient_quality": 0.65,
+      "ease_of_use": 0.7,
+      "overall": 0.67
+    },
+    "SheaMoistureManukaHoney&MafuraOilConditioner": {
+      "likability": 0.65,
+      "effectiveness": 0.7,
+      "value_for_money": 0.6,
+      "ingredient_quality": 0.65,
+      "ease_of_use": 0.7,
+      "overall": 0.67
+    },
+    "SheaMoistureRawSheaButterRestorativeConditioner": {
+      "likability": 0.65,
+      "effectiveness": 0.7,
+      "value_for_money": 0.6,
+      "ingredient_quality": 0.65,
+      "ease_of_use": 0.7,
+      "overall": 0.67
+    },
+    "TginMoistureRichSulfateFreeShampooForNaturalHairDryHairCurlyHairAlternate2WeeksOfEach": {
+      "likability": 0.8333333333333334,
+      "effectiveness": 0.6447368421052632,
+      "value_for_money": 0.75,
+      "ingredient_quality": 0.8,
+      "ease_of_use": 0.53125,
+      "overall": 0.7265460526315789
+    },
+    "FaithInNatureNaturalAvocadoConditionerNourishingVegan": {
+      "likability": 0.65,
+      "effectiveness": 0.7,
+      "value_for_money": 0.6,
+      "ingredient_quality": 0.65,
+      "ease_of_use": 0.7,
+      "overall": 0.67
+    },
+    "AvalonTheScienceOfHaircareKeraCareNaturalTextures2ConditionerWithoutRinse240Ml": {
+      "likability": 0.65,
+      "effectiveness": 0.7,
+      "value_for_money": 0.6,
+      "ingredient_quality": 0.65,
+      "ease_of_use": 0.7,
+      "overall": 0.67
+    },
+    "CamilleRoseNaturalsMoroccanPearConditioningCustardForLowPorosity": {
+      "likability": 0.65,
+      "effectiveness": 0.7,
+      "value_for_money": 0.6,
+      "ingredient_quality": 0.65,
+      "ease_of_use": 0.7,
+      "overall": 0.67
+    }
+  },
+  "last_updated": {
+    "AsIAmCurlClarityShampooNP": "2025-04-06T11:46:23.305479",
+    "AfricanPrideMoistureMiracleAloe&CoconutWaterPreShampoo": "2025-03-26T16:39:39.898797",
+    "AfricanPrideMoistureMiracleHoney&CoconutOilShampoo": "2025-04-06T12:13:06.318497",
+    "AsIAmCoconutCoWashCleansingConditioner": "2025-03-26T16:44:16.803186",
+    "AsIAmDoubleButterCreamRichDailyMoisturizer227g/8Oz.": "2025-04-06T11:46:31.471456",
+    "AsIAmDry&ItchyScalpCareOlive&TeaTreeOilCoWash": "2025-03-26T16:48:46.421422",
+    "AsIAmLeaveInConditioner237ml/8FlOz.": "2025-03-26T16:50:09.546004",
+    "AvlonKeraCareAntiDandruffMoisturizingShampooForDry&ItchyScalpShampoo1240ml/8Fl.Oz": "2025-03-26T22:27:34.603729",
+    "CamilleRoseCurlLoveMoistureMilk": "2025-04-06T11:46:39.580930",
+    "DesignEssentialsOatProtein&HennaFullerThickerStrongerDeepCleansingShampoo": "2025-03-26T22:33:24.137458",
+    "DesignEssentialsOatProtein&HennaFullerThickerStrongerDeepCleansingShampooHighRated": "2025-03-26T22:34:12.258643",
+    "GiovanniDirectLeaveInConditioner\u2013HighRated": "2025-03-26T22:36:29.558794",
+    "GiovanniTeaTreeTripleTreatConditioner": "2025-03-26T22:37:56.893625",
+    "KeraCareHumectoCr\u00e8meConditioner234g": "2025-04-06T11:46:06.994991",
+    "KeraCare\u00aeEssentialOilsOilSealant/MoistureLock/Nourishment.50": "2025-03-26T22:43:06.570336",
+    "MielleOrganicsMongongoOilHydratingConditioner\u2013NOProtein": "2025-04-06T12:12:58.095063",
+    "MielleOrganicsWhitePeonyLeaveinConditioner8Oz236Ml": "2025-03-26T22:45:23.273807",
+    "OrganicsWhitePeonyLeaveinConditioner8Oz236Ml": "2025-03-26T22:45:52.887113",
+    "SealentKeraCare\u00aeEssentialOilsOilSealant/MoistureLock/Nourishment..50": "2025-03-26T22:48:56.105039",
+    "SheaMoistureAfricanBlackSoapBambooCharcoalDeepCleansingShampoo13OZ.": "2025-04-06T11:46:15.160523",
+    "SheaMoistureJamaicanBlackCastorOilStrengthenAndRestoreShampoo": "2025-03-26T23:04:15.608518",
+    "SheaMoistureOrganicRawSheaButterMoistureRetentionShampoo": "2025-03-26T23:07:05.640776",
+    "SheaMoistureRawSheaButterExtraMoistureDetangler": "2025-03-26T23:07:49.274618",
+    "TginMoistureRichSulfateFreeShampooForNaturalHair": "2025-03-26T23:08:59.968023",
+    "SheaMoistureJamaicanBlackCastorOilStrengthen/GrowAndRestoreLeaveInConditioner16Oz": "2025-04-06T11:45:58.822447",
+    "SheaMoistureManukaHoney&MafuraOilConditioner": "2025-03-26T23:21:10.165507",
+    "SheaMoistureRawSheaButterRestorativeConditioner": "2025-04-06T12:23:17.477947",
+    "TginMoistureRichSulfateFreeShampooForNaturalHairDryHairCurlyHairAlternate2WeeksOfEach": "2025-03-26T23:24:46.522173",
+    "FaithInNatureNaturalAvocadoConditionerNourishingVegan": "2025-03-26T23:30:35.294735",
+    "AvalonTheScienceOfHaircareKeraCareNaturalTextures2ConditionerWithoutRinse240Ml": "2025-03-26T23:33:08.710251",
+    "CamilleRoseNaturalsMoroccanPearConditioningCustardForLowPorosity": "2025-03-27T18:30:16.604223"
+  },
+  "product_urls": {
+    "AsIAmCoconutCoWashCleansingConditioner": "https://www.amazon.com/Am-Coconut-Cowash-Cleansing-Conditioner/dp/B00641UCY8",
+    "AsIAmCurlClarityShampooNP": "https://www.amazon.com/Am-Curl-Clarity-Shampoo-Ounce/dp/B0065QZPI0",
+    "AsIAmDoubleButterCreamRichDailyMoisturizer227g/8Oz.": "https://www.amazon.com/Am-Double-Butter-Cream-Pack/dp/B01BV3KIEM/",
+    "AfricanPrideMoistureMiracleAloe&CoconutWaterPreShampoo": "https://www.amazon.com/African-Pride-Moisture-Miracle-Pre-Shampoo/dp/B09JKRHB15",
+    "AfricanPrideMoistureMiracleHoney&CoconutOilShampoo": "https://www.amazon.com/African-Pride-Moisture-Miracle-Coconut/dp/B07FJLQKQN",
+    "AsIAmDry&ItchyScalpCareOlive&TeaTreeOilCoWash": "https://www.amazon.com/Am-Itchy-Scalp-Shampoo-Conditioner/dp/B07Q76BKLW",
+    "AsIAmLeaveInConditioner237ml/8FlOz.": "www.amazon.com/As-Am-Leave-Conditioner-Ounce/dp/B0065R18TY",
+    "AvlonKeraCareAntiDandruffMoisturizingShampooForDry&ItchyScalpShampoo1240ml/8Fl.Oz": "https://www.amazon.com/Avlon-KeraCare-Itchy-Scalp-Shampoo/dp/B0012ZX17G",
+    "CamilleRoseCurlLoveMoistureMilk": "https://www.amazon.com/Camille-Rose-Naturals-Moisture-Ounce/dp/B006FJPKT6",
+    "DesignEssentialsOatProtein&HennaFullerThickerStrongerDeepCleansingShampoo": "https://www.amazon.com/Design-Essentials-Protein-Cleansing-Shampoo/dp/B084YP979",
+    "DesignEssentialsOatProtein&HennaFullerThickerStrongerDeepCleansingShampooHighRated": "https://www.amazon.com/Design-Essentials-Protein-Cleansing-Shampoo/dp/B084YP979",
+    "GiovanniDirectLeaveInConditioner\u2013HighRated": "https://www.amazon.com/Giovanni-Direct-Leave-Treatment-Conditioner/dp/B00099Z2OQ",
+    "GiovanniTeaTreeTripleTreatConditioner": "https://www.amazon.com/Giovanni-Cosmetics-Triple-Invigorating-Conditioner/dp/B0011UVCKU",
+    "KeraCareHumectoCr\u00e8meConditioner234g": "https://www.amazon.com/Keracare-Humecto-Creme-Conditioner-Pack/dp/B09LKLYT2V",
+    "KeraCare\u00aeEssentialOilsOilSealant/MoistureLock/Nourishment.50": "https://www.amazon.com/AVLON-Keracare-Essential-Oils-Ounce/dp/B000NNCA1Q",
+    "MielleOrganicsMongongoOilHydratingConditioner\u2013NOProtein": "https://www.amazon.com/Mielle-Organics-Mongongo-Hydrating-Conditioner/dp/B0752Y8HGY",
+    "MielleOrganicsWhitePeonyLeaveinConditioner8Oz236Ml": "https://www.amazon.com/Mielle-White-Peony-Leave-Conditioner/dp/B01D55WP9K",
+    "OrganicsWhitePeonyLeaveinConditioner8Oz236Ml": "https://www.amazon.com/Mielle-White-Peony-Leave-Conditioner/dp/B01D55WP9K",
+    "SealentKeraCare\u00aeEssentialOilsOilSealant/MoistureLock/Nourishment..50": "https://www.amazon.com/AVLON-Keracare-Essential-Oils-Ounce/dp/B000NNCA1Q",
+    "SheaMoistureAfricanBlackSoapBambooCharcoalDeepCleansingShampoo13OZ.": "https://www.amazon.com/SheaMoisture-African-clearing-Visible-Moisture/dp/B0DB6BQ798",
+    "SheaMoistureJamaicanBlackCastorOilStrengthenAndRestoreShampoo": "https://www.amazon.com/Shea-Moisture-Jamaican-Shampoo-Strengthen/dp/B01LFQYXBO",
+    "SheaMoistureOrganicRawSheaButterMoistureRetentionShampoo": "https://www.amazon.com/Shea-Moisture-Retention-Shampoo-Pound/dp/B00XX57W1O",
+    "SheaMoistureRawSheaButterExtraMoistureDetangler": "https://www.amazon.com/SheaMoisture-Shea-Butter-Extra-Moisture-Detangler/dp/B07NQLWYZJ",
+    "TginMoistureRichSulfateFreeShampooForNaturalHair": "https://www.amazon.com/Thank-God-Its-Natural-Conditioner/dp/B00IV0ZI1M",
+    "SheaMoistureJamaicanBlackCastorOilStrengthen/GrowAndRestoreLeaveInConditioner16Oz": "https://www.amazon.com/SheaMoisture-Jamaican-Strengthen-Restore-Conditioner/dp/B07NQLWYXW",
+    "SheaMoistureManukaHoney&MafuraOilConditioner": "https://www.amazon.com/SheaMoisture-Intensive-Conditioner-moisturizing-conditioner/dp/B09D8D4CT4",
+    "SheaMoistureRawSheaButterRestorativeConditioner": "https://www.amazon.com/SheaMoisture-Shea-Butter-Restorative-Conditioner/dp/B073HPLM2N",
+    "TginMoistureRichSulfateFreeShampooForNaturalHairDryHairCurlyHairAlternate2WeeksOfEach": "https://www.amazon.com/Thank-God-Its-Natural-Conditioner/dp/B00IV0ZI1M"
+  }
+}

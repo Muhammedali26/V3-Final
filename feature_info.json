@@ -1,0 +1,12 @@
+{
+    "feature_columns": [
+        "DRYNESS",
+        "DAMAGE",
+        "SENSITIVITY",
+        "SEBUM_Oil",
+        "DRY_SCALP",
+        "FLAKES"
+    ],
+    "feature_count": 6,
+    "timestamp": "2025-03-28T16:28:44.205998"
+}
